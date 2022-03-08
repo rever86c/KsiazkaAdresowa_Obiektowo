@@ -1,5 +1,6 @@
 #include "UzytkownikMenadzer.h"
 
+
 void UzytkownikMenadzer::rejestracjaUzytkownika()
 {
 
