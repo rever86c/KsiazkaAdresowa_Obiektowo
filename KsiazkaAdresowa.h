@@ -17,6 +17,7 @@ public:
     //void wczytajUzytkownikowZPliku();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    int logowanieUzytkownika();
 
 };
 #endif

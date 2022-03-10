@@ -8,6 +8,7 @@
 #include <sstream>
 #include "PlikZUzytkownikami.h"
 #include "Uzytkownik .h"
+#include "MetodyPomocnicze.h"
 
 using namespace std;
 
@@ -26,6 +27,7 @@ public:
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void wczytajUzytkownikowZPliku();
+    int logowanieUzytkownika();
 };
 
 #endif
