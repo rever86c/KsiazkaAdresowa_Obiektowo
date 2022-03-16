@@ -25,6 +25,10 @@ void KsiazkaAdresowa::wyswietlIdZalogowanegoUzytkownika()
     cout<<endl<<uzytkownikMenadzer.pobierzIdZalogowanegoUzytkownika();
 }
 
+void KsiazkaAdresowa::wylogowanieUzytkownika()
+{
+    uzytkownikMenadzer.wylogowanieUzytkownika();
+}
 
 
 
