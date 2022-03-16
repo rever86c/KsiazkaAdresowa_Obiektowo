@@ -109,6 +109,11 @@ void UzytkownikMenadzer::logowanieUzytkownika()
     return;
 }
 
+void UzytkownikMenadzer :: wylogowanieUzytkownika()
+{
+    idZalogowanegoUzytkownika = 0;
+}
+
 int UzytkownikMenadzer ::pobierzIdZalogowanegoUzytkownika()
 {
     return idZalogowanegoUzytkownika;

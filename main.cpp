@@ -16,7 +16,9 @@ int main()
     //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
     ksiazkaAdresowa.logowanieUzytkownika();
     ksiazkaAdresowa.wyswietlIdZalogowanegoUzytkownika();
-    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
-    cout<<endl<<"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+  //  ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
+  //  cout<<endl<<"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+   // ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+   ksiazkaAdresowa.wylogowanieUzytkownika();
+   ksiazkaAdresowa.wyswietlIdZalogowanegoUzytkownika();
 }
