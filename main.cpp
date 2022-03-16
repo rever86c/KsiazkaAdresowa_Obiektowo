@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int test;
+    //int test;
     KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
     //ksiazkaAdresowa.rejestracjaUzytkownika();
    // ksiazkaAdresowa.rejestracjaUzytkownika();
@@ -14,6 +14,9 @@ int main()
     //ksiazkaAdresowa.rejestracjaUzytkownika();
    // ksiazkaAdresowa.rejestracjaUzytkownika();
     //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-    test = ksiazkaAdresowa.logowanieUzytkownika();
-    cout<<endl<<test;
+    ksiazkaAdresowa.logowanieUzytkownika();
+    ksiazkaAdresowa.wyswietlIdZalogowanegoUzytkownika();
+    ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
+    cout<<endl<<"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
 }

@@ -10,11 +10,20 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
     uzytkownikMenadzer.wypiszWszystkichUzytkownikow();
 }
 
-int KsiazkaAdresowa::logowanieUzytkownika()
+void KsiazkaAdresowa::logowanieUzytkownika()
 {
-    return uzytkownikMenadzer.logowanieUzytkownika();
+    uzytkownikMenadzer.logowanieUzytkownika();
 }
 
+void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
+{
+    uzytkownikMenadzer.zmianaHaslaZalogowanegoUzytkownika();
+}
+
+void KsiazkaAdresowa::wyswietlIdZalogowanegoUzytkownika()
+{
+    cout<<endl<<uzytkownikMenadzer.pobierzIdZalogowanegoUzytkownika();
+}
 
 
 
