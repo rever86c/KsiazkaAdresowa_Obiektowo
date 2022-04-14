@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     //int test;
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt", "Adresaci.txt");
     //ksiazkaAdresowa.rejestracjaUzytkownika();
    // ksiazkaAdresowa.rejestracjaUzytkownika();
 //   ksiazkaAdresowa.wczytajUzytkownikowZPliku();
@@ -15,10 +15,22 @@ int main()
    // ksiazkaAdresowa.rejestracjaUzytkownika();
     //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
     ksiazkaAdresowa.logowanieUzytkownika();
-    ksiazkaAdresowa.wyswietlIdZalogowanegoUzytkownika();
+   // ksiazkaAdresowa.wyswietlIdZalogowanegoUzytkownika();
   //  ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();
   //  cout<<endl<<"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
    // ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-   ksiazkaAdresowa.wylogowanieUzytkownika();
+   //ksiazkaAdresowa.wylogowanieUzytkownika();
    ksiazkaAdresowa.wyswietlIdZalogowanegoUzytkownika();
+   ksiazkaAdresowa.ustawIdZalogowanegoUzytkownika();
+
+   //ksiazkaAdresowa.wyswietlIDOststnigeoAdresataZPliku();
+
+   ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+   //ksiazkaAdresowa.wyswietlWszystkichAdresatow();
+   ksiazkaAdresowa.wyswietlWszystkichAdresatow();
+   ksiazkaAdresowa.dodajAdresata();
+   //ksiazkaAdresowa.ustawIdZalogowanegoUzytkownika();
+   ksiazkaAdresowa.wyswietlWszystkichAdresatow();
+   ksiazkaAdresowa.wyswietlIDOststnigeoAdresataZPliku();
+
 }

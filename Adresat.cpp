@@ -32,7 +32,7 @@ string Adresat::pobierzAdres()
     return adres;
 }
 
-void Adresat::ustwId(int noweId)
+void Adresat::ustawId(int noweId)
 {
         id = noweId;
 }
