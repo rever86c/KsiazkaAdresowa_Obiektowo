@@ -19,7 +19,7 @@ public:
     string pobierzEmail();
     string pobierzAdres();
 
-    void ustwId(int noweId);
+    void ustawId(int noweId);
     void ustawIdUzytkownika(int noweIdUzytkownika);
     void ustawImie(string noweImie);
     void ustawNazwisko(string noweNazwisko);

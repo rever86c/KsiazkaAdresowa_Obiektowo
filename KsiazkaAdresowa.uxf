@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>820</x>
-      <y>330</y>
+      <x>640</x>
+      <y>540</y>
       <w>300</w>
       <h>360</h>
     </coordinates>
@@ -13,15 +13,15 @@
 --
 - uzytkownikMenadzer : UzytkownikMenadzer
 --
-
-</panel_attributes>
+KsiazkaAdresowa()
+ </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2070</x>
-      <y>320</y>
+      <x>2350</x>
+      <y>250</y>
       <w>250</w>
       <h>170</h>
     </coordinates>
@@ -35,9 +35,9 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1190</x>
-      <y>330</y>
-      <w>330</w>
+      <x>1050</x>
+      <y>250</y>
+      <w>550</w>
       <h>420</h>
     </coordinates>
     <panel_attributes>UzytkownikMenadzer
@@ -46,21 +46,24 @@
 - uzytkownicy vector&lt;Uzytkownik&gt;
 --
 + rejestracjaUzytkownika() : void
-+ logowanieUzytkownika() : Integer
++ logowanieUzytkownika() : void
++ wylogowanieUzytkownika() : void
++ zmianaHaslaZalogowanegoUzytkownika() : void
 + wypiszWSzystkichUzytkownikow() : void
++ wczytajUzytkownikowZPliku() : void
 - podajDaneNowegoUzytkownika() : Uzytkownik
 - pobierzIdNowehoUzytkownika() : Integer
 - czyIstniejeLogin() : Bool
-
+-
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1760</x>
-      <y>330</y>
-      <w>250</w>
+      <x>1690</x>
+      <y>250</y>
+      <w>600</w>
       <h>390</h>
     </coordinates>
     <panel_attributes>PlikZUzytkownikami
@@ -70,6 +73,8 @@
 --
 + PlikZUzytkownikami()
 + dopiszUzytkownikaDoPliku() : Void
++ wczytajUzytkownikowZPliku() : vector &lt;Uzytkownik&gt;
+- zapiszWszystkichUzytkownikowDoPliku() : void
 - czyPlikJestPusty() : Bool
 - zamienDaneUzytkownikaNaLinieZDanymiOddzielonymiPionowymiKreskami() : String
 </panel_attributes>
@@ -78,15 +83,81 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2100</x>
-      <y>570</y>
-      <w>240</w>
+      <x>2700</x>
+      <y>450</y>
+      <w>440</w>
       <h>350</h>
     </coordinates>
     <panel_attributes>MetodyPomocnicze
 --
-+konwersjaIntNaString() : String
++ konwersjaIntNaString() : String
++ wczytajLinie() : String
++ zamienPierwszaLitereNaDuzeAPozostaleNaMale() : String
++ konwersjaStringNaInt() : Integer
++ pobierzLiczbe() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>770</y>
+      <w>550</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>AdresatMenadzer
+--
+-adresaci vector&lt;Adresat&gt;
+- idZalogowanegoUzytkownika : Integer
+- idOstatniegoUzytkownika : Integer
+--
++ dodajAdresata() : integer
+- podajDaneNowegoAdresata() : Adresat
++ wyswiwtlWszystkichAdresatow : void
+- wyswietlDaneAdresata : void
++ ustawIdZalogowanegoUzytkownika() : void
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2360</x>
+      <y>770</y>
+      <w>250</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Adresat
+--
+- id : int
+- idUzytkownika : int
+- imie : string
+- nazwisko : string
+- numerTelefonu : string
+- email : string
+- adres : string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1720</x>
+      <y>770</y>
+      <w>590</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>PlikZAdresatami
+--
+- nazwaPlikuZAdrsatami : String
+--
++ dopiszAdresataDoPliku() : void
+- zamienDaneAdresataNLInieZDanymiOddzielonymiPionowymiKreskami() : string
+- czyPlikJestPusty() : Bool
++ wczytajAdresatowZalogowanegoUzytkownikaZPliku() : Integer
+- pobierzDaneAdrsata() : Adresat
+- pobierzIdAdresataZDanychOddzielonychPionowymiKreskami() : Integer
+- pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami() : Integer
++ pobierzZPlikuIdOstatniegoAdresata() : Int</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
